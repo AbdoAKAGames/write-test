@@ -3,6 +3,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Write Test</title>
+    <link rel="shortcut icon" href="favicon2.png" type="image/x-icon">
     <style>
         html, body {
             height: 100%;
@@ -95,13 +96,7 @@
 
         start.addEventListener("click", () => {
             activateTimer();
-            inp.focus({ preventScroll: true });
-            inp.addEventListener("keyup", () => {
-                endGame();
-            });
-            inp.addEventListener("keydown", () => {
-                endGame();
-            });
+            inp.focus();
             inp.addEventListener("keypress", () => {
                 endGame();
             });
